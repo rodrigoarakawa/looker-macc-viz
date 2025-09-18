@@ -1,0 +1,3 @@
+:root { --macc-font: 12px system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+body { font: var(--macc-font); margin: 0; padding: 0; }
+#macc-root { width: 100%; height: 100%; }
