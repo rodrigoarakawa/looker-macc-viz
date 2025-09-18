@@ -1,0 +1,90 @@
+{
+  "data": {
+    "id": "data",
+    "label": "Dados",
+    "elements": [
+      {
+        "id": "actionDim",
+        "label": "Ação / Medida",
+        "type": "DIMENSION",
+        "options": { "min": 1, "max": 1 }
+      },
+      {
+        "id": "abatementMetric",
+        "label": "Abatimento (tCO2e)",
+        "type": "METRIC",
+        "options": { "min": 1, "max": 1 }
+      },
+      {
+        "id": "costMetric",
+        "label": "Custo marginal (R$/tCO2e)",
+        "type": "METRIC",
+        "options": { "min": 1, "max": 1 }
+      },
+      {
+        "id": "categoryDim",
+        "label": "Categoria (opcional)",
+        "type": "DIMENSION",
+        "options": { "min": 0, "max": 1 }
+      }
+    ]
+  },
+  "style": {
+    "id": "style",
+    "label": "Estilos",
+    "elements": [
+      {
+        "id": "posColor",
+        "label": "Cor (custo \u2265 0)",
+        "type": "COLOR",
+        "defaultValue": { "color": "#4C78A8" }
+      },
+      {
+        "id": "negColor",
+        "label": "Cor (custo < 0)",
+        "type": "COLOR",
+        "defaultValue": { "color": "#72B7B2" }
+      },
+      {
+        "id": "axisColor",
+        "label": "Cor dos eixos",
+        "type": "COLOR",
+        "defaultValue": { "color": "#333333" }
+      },
+      {
+        "id": "showLabels",
+        "label": "Mostrar rótulos",
+        "type": "CHECKBOX",
+        "defaultValue": true
+      },
+      {
+        "id": "currency",
+        "label": "Símbolo da moeda",
+        "type": "TEXT",
+        "defaultValue": "R$"
+      },
+      {
+        "id": "unit",
+        "label": "Unidade do abatimento",
+        "type": "TEXT",
+        "defaultValue": "tCO2e"
+      },
+      {
+        "id": "decimals",
+        "label": "Casas decimais (custo)",
+        "type": "NUMBER",
+        "defaultValue": 2
+      ]
+    ]
+  },
+  "interactions": [
+    {
+      "id": "onClick",
+      "label": "Clique \u2192 filtro",
+      "supportedActions": ["FILTER"]
+    }
+  ],
+  "features": {
+    "enableComparisonDateRange": false
+  }
+}
