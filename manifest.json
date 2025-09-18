@@ -1,0 +1,23 @@
+{
+  "name": "MACC Package",
+  "organization": "Rodrigo Arakawa",
+  "description": "Curva MACC (Marginal Abatement Cost Curve) para Looker Studio",
+  "logoUrl": "https://rodrigoarakawa.github.io/looker-macc-viz/icon.svg",
+  "organizationUrl": "https://rodrigoarakawa.github.io/looker-macc-viz/",
+  "supportUrl": "mailto:rodrigoarakawa18@gmail.com",
+  "packageUrl": "https://rodrigoarakawa.github.io/looker-macc-viz/",
+  "devMode": true,
+  "components": [
+    {
+      "id": "macc",
+      "name": "MACC (Curva de Custo Marginal de Abatimento)",
+      "description": "Barras com largura = abatimento acumulado e altura = custo marginal; ordenação por custo crescente.",
+      "iconUrl": "https://rodrigoarakawa.github.io/looker-macc-viz/icon.svg",
+      "resource": {
+        "js": "https://rodrigoarakawa.github.io/looker-macc-viz/macc.bundle.js",
+        "config": "https://rodrigoarakawa.github.io/looker-macc-viz/viz-config.json",
+        "css": "https://rodrigoarakawa.github.io/looker-macc-viz/macc.css"
+      }
+    }
+  ]
+}
